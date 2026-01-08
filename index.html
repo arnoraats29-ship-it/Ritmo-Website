@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ritmo site</title>
+    <title>Home Page</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="normalize.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -22,17 +22,19 @@
           </a>
         </div>
 
-        <div id="fullnav">
-          <a href="#">Community </a>
+        <div class="nav-items">
+          <a href="Community.html">Community </a>
           <a href="#">Features</a>
           <a href="#">Support</a>
         </div>
 
-        <div><a href="#" id="hamburger">&equiv;</a></div>
+        <input type="checkbox" id="hamburger" class="hamburger-input" />
+        <label for="hamburger" class="hamburger-label">&equiv;</label>
       </nav>
+
       <section class="hero">
         <div class="hero-content">
-          <h1>Run with Rhythem</h1>
+          <h1>Run with Rhytm</h1>
           <p>Experience music matched to your pace.</p>
         </div>
       </section>
@@ -123,7 +125,7 @@
         </svg>
       </div>
       <section class="Race-Ready">
-        <div>
+        <div class="text_race">
           <span>Race-ready in weeks</span>
           <h2>Personalized Training Plans</h2>
           <p>
@@ -138,20 +140,20 @@
               <p>Goals on time</p>
             </div>
             <div class="stat">
-              <span>4x</span>
+              <span class="stat-numbers">4x</span>
               <p>Faster PRs</p>
             </div>
             <div class="stat">
-              <span>250+</span>
+              <span class="stat-numbers">250+</span>
               <p>Fewer missed runs</p>
             </div>
           </div>
-          <div class="runners-img">
-            <img
-              src="Images/jonathan-chng-HgoKvtKpyHA-unsplash.jpg"
-              alt="image runner"
-            />
-          </div>
+        </div>
+        <div class="runners-img">
+          <img
+            src="Images/jonathan-chng-HgoKvtKpyHA-unsplash.jpg"
+            alt="image runner"
+          />
         </div>
       </section>
 
@@ -162,33 +164,35 @@
             run.</span
           >
           <h2>Find Your Running Rhythm</h2>
-          <div class="feature">
-            <span class="icon"><img src="Images/image 1.svg" alt="" /></span>
-            <p>
-              Personalized AI that evolves with your runs to boost your
-              performance.
-            </p>
-          </div>
-          <div class="feature">
-            <span class="icon"><img src="Images/Vector.svg" alt="" /></span>
-            <p>
-              Beat-synced music that adapts in real time, keeping your energy
-              high from start to finish.
-            </p>
-          </div>
-          <div class="feature">
-            <span class="icon"><img src="Images/image 2.svg" alt="" /></span>
-            <p>
-              Real-time coaching and feedback to help you stay on track and
-              improve every session.
-            </p>
-          </div>
-          <div class="feature">
-            <span class="icon"><img src="Images/image 4.svg" alt="" /></span>
-            <p>
-              Seamless connection with your headphones, smartwatch, and fitness
-              trackers.
-            </p>
+          <div class="full_feature">
+            <div class="feature">
+              <span class="icon"><img src="Images/image 1.svg" alt="" /></span>
+              <p>
+                Personalized AI that evolves with your runs to boost your
+                performance.
+              </p>
+            </div>
+            <div class="feature">
+              <span class="icon"><img src="Images/Vector.svg" alt="" /></span>
+              <p>
+                Beat-synced music that adapts in real time, keeping your energy
+                high from start to finish.
+              </p>
+            </div>
+            <div class="feature">
+              <span class="icon"><img src="Images/image 2.svg" alt="" /></span>
+              <p>
+                Real-time coaching and feedback to help you stay on track and
+                improve every session.
+              </p>
+            </div>
+            <div class="feature">
+              <span class="icon"><img src="Images/image 4.svg" alt="" /></span>
+              <p>
+                Seamless connection with your headphones, smartwatch, and
+                fitness trackers.
+              </p>
+            </div>
           </div>
 
           <span class="gif"
@@ -269,35 +273,42 @@
 
     <footer>
       <div class="full_footer">
-        <div>
-          <img src="Images/Asset 10.svg" alt="logo ritmo" />
+        <div class="logo_footer">
+          <img src="Images/Logowhite.svg" alt="logo ritmo" />
           <h3>Run with Rhythm</h3>
         </div>
-        <div class="Navigation">
-          <h4>Navigation Links</h4>
-          <a href="#"></a>Home <a href="#"></a>Features <a href="#"></a>Download
-          (App Store / Google Play) <a href="#"></a>Community / Blog
-          <a href="#"></a>Support / FAQ
-        </div>
-        <div class="contacts">
-          <h4>Contact & Social Links</h4>
-          <span>Email/contact form link ("Contact Us")</span>
-          <div class="download">
-            <img src="Images/button.svg" alt="download in the app store " />
-            <img src="Images/button-1.svg" alt="download in the google play" />
+
+        <div class="footer_right">
+          <div class="Navigation">
+            <h4>Navigation Links</h4>
+            <a href="#">Home</a> <a href="#">Features</a>
+            <a href="#">Download </a><a href="#">Community / Blog</a>
+            <a href="#">Support / FAQ</a>
+          </div>
+
+          <div class="footer_down">
+            <div class="download">
+              <img src="Images/button.svg" alt="download in the app store " />
+              <img
+                src="Images/button-1.svg"
+                alt="download in the google play"
+              />
+            </div>
+
+            <div class="join">
+              <span>Join us</span>
+              <img src="Images/Social Icons.svg" alt="icons socials" />
+            </div>
           </div>
         </div>
-        <div class="join">
-          <span>Join us</span>
-          <img src="Images/Social Icons.svg" alt="" />
-        </div>
-        <span class="divider"></span>
-        <div class="copyrights">
-          <p>© 2025 Ritmo. All rights reserved.</p>
-          <div>
-            <p>Privacy Policy</p>
-            <p>Terms of Service</p>
-          </div>
+      </div>
+
+      <span class="divider"></span>
+      <div class="copyrights">
+        <p>© 2025 Ritmo. All rights reserved.</p>
+        <div>
+          <p>Privacy Policy</p>
+          <p>Terms of Service</p>
         </div>
       </div>
     </footer>

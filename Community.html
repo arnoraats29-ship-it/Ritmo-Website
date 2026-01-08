@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Community page</title>
+    <link rel="stylesheet" href="Community.css" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="index.html">
+            <img src="Images/Asset 10.svg" alt="Logo Ritmo" />
+          </a>
+        </div>
+
+        <div class="nav-items">
+          <a href="#">Community </a>
+          <a href="#">Features</a>
+          <a href="#">Support</a>
+        </div>
+
+        <input type="checkbox" id="hamburger" class="hamburger-input" />
+        <label for="hamburger" class="hamburger-label">&equiv;</label>
+      </nav>
+
+      <section>
+        <div class="Community">
+          <h1>Runner Community</h1>
+          <p>
+            Connect with runners worldwide. Share your stories, vote in polls,
+            and find your running inspiration.
+          </p>
+
+          <div class="tab">
+            <h4>Latest Blogs</h4>
+            <h4 class="gray">Weekly Challenge</h4>
+            <h4 class="gray">Community Stats</h4>
+          </div>
+          <span class="divider"></span>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="latest">
+        <span>LATEST FROM THE COMMUNITY</span>
+        <h2>Stories, Tips, and Inspiration from Runners Like You</h2>
+        </section>
+        
+        <section class="cards-container">
+
+            <div class="arrow-container">
+                <button class="arrow-btn arrow-left" onclick="scrollCards(-1)">←</button>
+            <div class="cards-grid">
+
+        <article class="card">
+          <div class="card-image"><img src="Images/martins-zemlickis-NPFu4GfFZ7E-unsplash.jpg" alt="image of runners" /></div>
+          <div class="card-content">
+            <span class="card-tag">Training Tips</span>
+            <h3>How to Build Your Perfect Running Playlist</h3>
+            <p>Discover the best BPM ranges for different run types and how to stay motivated.</p>
+            <div class="card-author">
+              <div class="card-author-img"><img src="Images/jurica-koletic-7YVZYZeITc8-unsplash.jpg" alt="Profile picture" /></div>
+              <div class="card-author-info">
+              <p class="card-author-name">Sarah M.</p>
+              <p class="card-author-role">Running Coach</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-image"><img src="Images/hannah-coleman-UFs5bKHgo4U-unsplash.jpg" alt="image of man running on a running track" /></div>
+          <div class="card-content">
+            <span class="card-tag">Runner Story</span>
+            <h3>From Couch to 10K with Ritmo</h3>
+            <p>How one runner used beat-synced music to crush their first race goal.
+</p>
+            <div class="card-author">
+              <div class="card-author-img"><img src="Images/eddy-lackmann-lLdGG3ESoiI-unsplash.jpg" alt="Profile picture" /></div>
+              <div class="card-author-info">
+              <p class="card-author-name">Mike T.</p>
+              <p class="card-author-role">Community Member</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-image"><img src="Images/vitaly-gariev-qKU58aIvJkA-unsplash.jpg" alt="image of man running with headphones" /></div>
+          <div class="card-content">
+            <span class="card-tag">Motivation</span>
+            <h3>5 Songs That Push You Through the Final Mile</h3>
+            <p>Community favorites that keep you going when it gets tough.</p>
+            <div class="card-author">
+              <div class="card-author-img"><img src="Images/gabriel-lima-P4zc-K50Avo-unsplash.jpg" alt="Profile picture" /></div>
+              <div class="card-author-info">
+              <p class="card-author-name">Emma L.</p>
+              <p class="card-author-role">Playlist Curator</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-image"><img src="Images/c-d-x-PDX_a_82obo-unsplash.jpg" alt="image of headphones" /></div>
+          <div class="card-content">
+            <span class="card-tag">Gear & Tech</span>
+            <h3>Best Headphones for Running in 2025</h3>
+            <p>Sweat-proof, secure, and perfect for Ritmo's beat-synced playlists.</p>
+            <div class="card-author">
+              <div class="card-author-img"><img src="Images/charlesdeluvio-kVg2DQTAK7c-unsplash.jpg" alt="Profile picture" /></div>
+              <div class="card-author-info">
+              <p class="card-author-name">Jake R.</p>
+              <p class="card-author-role">Tech Reviewer</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        </div>
+        </section>
+    </main>
+  </body>
+</html>
