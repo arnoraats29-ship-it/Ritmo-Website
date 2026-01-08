@@ -23,42 +23,123 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 16px 32px;
+  position: relative;
 }
+
+
+.hamburger-input {
+    display: none;
+}
+
+.hamburger-input:checked ~ .nav-slideout {
+  transform: translateY(0%);
+}
+
+.logo {
+  flex-shrink: 0;
+}
+
+
+  .hamburger-label {
+  display: inline-block;
+  position: relative;
+  width: 30px;
+  height: 24px;
+  padding: 0;
+  cursor: pointer;
+  flex-shrink: 0;
+    
+  }
+
+  .hamburger-label span {
+  position: absolute;
+  height: 3px;
+  background-color: var(--color-offblack);
+  width: 100%;
+  left: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger-label span:nth-child(1) {
+  top: 3px;
+}
+
+.hamburger-label span:nth-child(2) {
+  top: 11px;
+}
+
+.hamburger-label span:nth-child(3) {
+  top: 19px;
+}
+
+.hamburger-input:checked ~ .hamburger-label span:nth-child(1) {
+  opacity: 0;
+}
+
+.hamburger-input:checked ~ .hamburger-label span:nth-child(2) {
+  transform: rotate(45deg);
+  top: 11px;
+}
+
+.hamburger-input:checked ~ .hamburger-label span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 11px;
+}
+
+.nav-slideout {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: var(--color-darkred); 
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  gap: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  z-index: 10;
+}
+
+.hamburger-input:checked ~ .nav-slideout {
+   max-height: 500px;
+}
+
 
 .nav-items {
-  display: flex;
-  align-items: center;
-  gap: 2em;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: var(--color-white);
+  flex-direction: column;
+  padding: 0;
+  gap: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height;
 }
 
-
-
-.nav-items a {
+.nav-slideout a {
+  display: block;
+  padding: 16px 32px;
   text-decoration: none;
-  color: var(--color-offblack);
+  color: var(--color-white);
+  border-bottom: 1px solid var(--color-white);
+  text-align: center;
+  transition: background-color 0.2s;
 }
 
-.hamburger-input, .hamburger-label {
-  display: none;
+.nav-slideout a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
-@media (max-width: 768px) {
-  .hamburger-label {
-    display: inline-block;
-    cursor: pointer;
-    font-size: 3em;
-  }
-
-  .nav-items {
-    display: none;
-  }
-}
 
 .logo img {
   height: auto;
   width: clamp(250px, 30vw, 500px);
 }
-
 
 .Community {
     text-align: center;

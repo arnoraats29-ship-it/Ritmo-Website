@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Community page</title>
-    <link rel="stylesheet" href="Community.css" />
-    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="css/Community.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,21 +14,28 @@
   </head>
   <body>
     <header>
-      <nav>
+       <nav>
         <div class="logo">
           <a href="index.html">
             <img src="Images/Asset 10.svg" alt="Logo Ritmo" />
           </a>
         </div>
 
-        <div class="nav-items">
-          <a href="#">Community </a>
-          <a href="#">Features</a>
-          <a href="Support.html">Support</a>
-        </div>
+         <input type="checkbox" id="hamburger" class="hamburger-input" />
 
-        <input type="checkbox" id="hamburger" class="hamburger-input" />
-        <label for="hamburger" class="hamburger-label">&equiv;</label>
+          <label for="hamburger" class="hamburger-label">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <div class="nav-slideout">
+      <a href="Community.html">Community</a>
+      <a href="features.html">Features</a>
+      <a href="Support.html">Support</a>
+    </div>
+
+        
       </nav>
 
       <section>
