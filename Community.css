@@ -74,7 +74,7 @@ nav {
 .Community p {
     width: 50%;
     margin: 0 auto;
-    padding-bottom: 64px;
+    padding-bottom: 100px;
 }
 
 .tab {
@@ -91,7 +91,7 @@ nav {
     opacity: 50%;
 }
 
-.divider {
+.divider_tab {
     display: block;
     border: solid 1px var(--color-offblack);
     margin: 0 64px;
@@ -101,7 +101,7 @@ nav {
     padding-left: clamp(32px, 6vw, 100px);
     padding-right: clamp(32px, 6vw, 100px);
     text-align: center;
-    padding-top: 64px;
+    padding-top: 100px;
 
 }
 
@@ -275,6 +275,107 @@ nav {
 }
 
 
+footer {
+    background-color: var(--color-darkred);
+    color: var(--color-white);
+    text-align: center;
+}
+
+footer h3 {
+    font-size: 2em;
+}
+
+footer h4 {
+    font-size: 20px;
+}
+
+.full_footer {
+    padding-top: 64px;
+    padding-left: clamp(32px, 6vw, 100px);
+    padding-right: clamp(32px, 6vw, 100px);
+}
+
+.logo_footer {
+    margin: 0;
+    padding-bottom: 2em;
+}
+
+.logo_footer img {
+    width: 80%;
+    max-width: 400px;
+}
+
+.Navigation {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+    gap: 8px;
+    align-items: center;
+}
+
+.Navigation a {
+    text-decoration: none;
+    color: var(--color-white);
+    font-size: 1em;
+    font-weight: 200;
+    padding: 0.25em 1em;  
+    display: inline-block; 
+    line-height: 1.2;
+}
 
 
+.download {
+   padding-bottom: 2em;
+}
 
+.join {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.join img {
+    
+    padding-left: 32px;
+    max-width: 500px;
+}
+
+.divider {
+    display: block;
+    border: solid 1px var(--color-white);
+    margin: 32px 0;
+}
+
+.copyrights {
+    font-weight: lighter;
+    padding-bottom: 2em;
+    text-align: start;
+    padding-left: clamp(32px, 6vw, 100px);
+    padding-right: clamp(32px, 6vw, 100px);
+
+}
+
+.copyrights div {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 800px) {
+    
+
+    .full_footer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      
+    }
+
+    .logo_footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+}

@@ -169,7 +169,7 @@ nav {
     }
 
 .Race-Ready span {
-  color: #b12a0c;
+  color: var(--color-darkred);
   font-weight: bold;
   font-size: 1em;
 }
@@ -270,70 +270,100 @@ nav {
   color: var(--color-white);
 }
 
-.FAQ {
-  padding: 64px 0;
-  text-align: center;
-  width: 100%;
+.support-faq {
+    background-color: white;
+    padding: 80px 32px;
 }
 
-.FAQ span {
+.faq-header {
+    max-width: 1200px;
+    margin: 0 auto 60px;
+    text-align: center;
+}
+
+.faq-title {
+    font-size: 1.1em;
+    color: var(--color-offblack);
+    font-weight: bold;
+}
+
+.faq-header span {
   color: var(--color-darkred);
   font-weight: bold;
   font-size: 1em;
+
 }
 
-.FAQ h2 {
+.faq-header h2 {
   font-weight: bold;
   font-size: 2em;
   margin: 0;
   padding-top: 0.5em;
   padding-bottom: 1.5em;
-  padding-left: clamp(32px, 6vw, 100px);
-  padding-right: clamp(32px, 6vw, 100px);
-}
-
-.FAQ_list {
-  text-align: left;
-  padding-left: min(100px, 32px);
-  padding-right: min(100px, 32px);
-  margin: 0 auto;
-  max-width: 900px;
-}
-
-.faq-item .dropdown {
-  font-size: smaller;
-  padding: 1em 0;
-}
-
-.faq-item {
-  border-bottom: 1px solid var(--color-offblack);
-  padding-bottom: 4px;
-}
-
-.faq-item summary {
-  list-style: none;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 1em;
-  font-weight: light;
   color: var(--color-offblack);
 }
 
-.faq-item summary {
-  list-style: none;
+.faq-header p {
+    font-size: 1em;
+    color: var(--color-offblack);
+    opacity: 70%;
 }
 
-.faq-item[open] .icon {
+.faq-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background-color: var(--color-white);
+    border-bottom: 1px solid var(--color-orange);
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.faq-item summary {
+
+    display: flex;
+    justify-content: space-between;
+
+    list-style: none;
+    align-items: center;
+    padding: 20px 24px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s ease-in;
+    
+}
+
+.faq-item:hover {
+    background-color: lightgrey;
+}
+
+.faq-icon {
+    font-size: 1.5em;
+    color: var(--color-orange);
+    transition: transform 0.3s ease;
+}
+
+.faq-item[open] .faq-icon {
   transform: rotate(45deg);
 }
 
-.faq-item .icon {
-  font-size: 1.5em;
-  transition: transform 0.3s ease;
-  font-weight: 200;
+.faq-answer {
+    padding: 0 24px 20px 24px;
+    color: var(--color-offblack);
+    opacity: 85%;
+    line-height: 1.4;
 }
+
+@media (max-width: 800px) {
+    .faq-answer {
+        font-size: 0.8em;
+    }
+
+    
+}
+
 
 footer {
     background-color: var(--color-darkred);
